@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- SEO and Favicon -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CityPulse Live – Book Your Spot</title>
+  <meta name="description" content="CityPulse Live 2025 – Book your spot for a night of music, film, and unforgettable energy at Lagos Arena.">
+  <meta name="keywords" content="CityPulse, concert, movie premiere, Lagos event, book ticket, CityPulse Live 2025">
+  <meta name="author" content="CodeByEbo">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="CityPulse Live 2025" />
+  <meta property="og:description" content="Experience the thrill of live music and film. September 26, 2025 – Lagos Arena." />
+  <meta property="og:image" content="https://citypulse.netlify.app/flyer5.png" />
+  <meta property="og:url" content="https://citypulse.netlify.app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CityPulse Live 2025" />
+  <meta name="twitter:description" content="Experience the thrill of live music and film. September 26, 2025 – Lagos Arena." />
+  <meta name="twitter:image" content="https://citypulse.netlify.app/flyer5.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, .event-name {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .neon-text {
+      color: #ff3c78;
+      text-shadow: 0 0 5px #ff3c78, 0 0 10px #ff3c78, 0 0 20px #ff3c78;
+    }
+  </style>
+</head>
+
+<body class="bg-[#0f0c29] text-white">
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-4 bg-cover bg-center" style="background-image: url('cover.webp');">
+    <img src="logo.webp" alt="CityPulse Logo" class="w-40 mb-6" data-aos="fade-down">
+    <h1 class="text-5xl md:text-6xl font-bold event-name neon-text mb-4 animate-pulse" data-aos="zoom-in">CityPulse Live 2025</h1>
+    <p class="text-lg max-w-xl text-[#FFFFF0] font-semibold mb-6" data-aos="fade-up">Experience the thrill of live music & film under the stars - one night, one city, unforgettable energy.</p>
+    <div id="countdown" class="text-2xl font-semibold text-[#ffcc00] mb-6"></div>
+    <a href="#booking-form" class="bg-[#00ffe7] text-black px-6 py-3 rounded-full font-bold text-lg hover:bg-[#ffcc00] transition-all" data-aos="fade-up">Book Your Spot</a>
+  </section>
+
+  <!-- Event Details -->
+  <section class="py-16 px-6 max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-[#ff3c78] mb-8">Event Details</h2>
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div>
+        <p class="text-xl font-semibold">📍 Lagos Arena</p>
+        <p class="text-sm text-[#c9c9c9]">Venue</p>
+      </div>
+      <div>
+        <p class="text-xl font-semibold">🗓️ September 26, 2025</p>
+        <p class="text-sm text-[#c9c9c9]">Date</p>
+      </div>
+      <div>
+        <p class="text-xl font-semibold">⏰ 7:00 PM</p>
+        <p class="text-sm text-[#c9c9c9]">Time</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Enhanced Gallery Section -->
+<section class="py-20 bg-[#0f0c29] px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-[#00ffe7]">Past Moments</h2>
+    
+    <div class="overflow-x-auto">
+      <div class="flex gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-6">
+        
+        <!-- Image 1 -->
+        
+          <img src="open.jpg" alt="Opening Night Crowd" loading="lazy" class="rounded shadow object-cover h-48 w-full min-w-[250px]">
+        
+
+        <!-- Image 2 -->
+       
+          <img src="vip.jpg" alt="VIP Lounge Area" loading="lazy" class="rounded shadow object-cover h-48 w-full min-w-[250px]">
+        
+
+        <!-- Image 3 -->
+        
+          <img src="stage.jpg" alt="Stage Performance" loading="lazy" class="rounded shadow object-cover h-48 w-full min-w-[250px]">
+        
+
+        <!-- Image 4 -->
+      
+          <img src="crowd.jpg" alt="Audience Reaction" loading="lazy" class="rounded shadow object-cover h-48 w-full min-w-[250px]">
+        
+
+        <!-- Optional: Video
+        <video controls class="rounded shadow object-cover h-48 w-full min-w-[250px]" preload="none" poster="gallery/video-thumb.jpg">
+          <source src="gallery/clip.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+          <a href="crowd.jpg" data-lightbox="event-gallery" data-title="Audience Reaction"></a>
+         -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Event Highlights -->
+  <section class="py-20 px-6 text-center bg-[#0f0c29]" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-[#ff3c78] mb-10">Event Highlights</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-[#1b1b2f] p-6 rounded shadow" title="Top live artists & DJs performing!">
+        <h3 class="text-xl font-bold text-[#00ffe7] mb-2">🎤 Live Performances</h3>
+        <p class="text-[#c9c9c9]">Top artists, energetic sets, and unforgettable vibes on stage.</p>
+      </div>
+      <div class="bg-[#1b1b2f] p-6 rounded shadow" title="Premiere movie screening outdoors under the stars!">
+        <h3 class="text-xl font-bold text-[#ffcc00] mb-2">🍿 Outdoor Movie Premiere</h3>
+        <p class="text-[#c9c9c9]">Grab popcorn and enjoy the big screen under the stars.</p>
+      </div>
+      <div class="bg-[#1b1b2f] p-6 rounded shadow" title="Snap photos on our custom step & repeat wall!">
+        <h3 class="text-xl font-bold text-[#ff3c78] mb-2">📸 VIP Photo Wall</h3>
+        <p class="text-[#c9c9c9]">Pose, post, and take home memories with our branded photo zone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="py-20 px-6 bg-[#1b1b2f] text-center" data-aos="fade-up">
+<div data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-[#00ffe7] mb-6">Reserve Your Ticket</h2>
+  <form id="booking-form" action="https://script.google.com/macros/s/AKfycbzYsgHVw-1fMk8hut5XjIv4asnXSHrjruCfavEAFTspdHOz-OIAJ1NXiJ6Du4UJGorj_g/exec" method="POST" class="max-w-md mx-auto space-y-4">
+    <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded bg-white text-black">
+    <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded bg-white text-black">
+    <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-4 py-3 rounded bg-white text-black">
+    <select name="ticketType" required class="w-full px-4 py-3 rounded bg-white text-black">
+      <option value="" disabled selected>Select Ticket Type</option>
+      <option value="General Admission">General Admission – ₦5,000</option>
+      <option value="VIP">VIP – ₦15,000</option>
+      <option value="Backstage Pass">Backstage Pass – ₦25,000</option>
+    </select>
+    <select name="quantity" required class="w-full px-4 py-3 rounded bg-white text-black">
+      <option value="" disabled selected>Number of Tickets</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <label class="inline-flex items-center text-[#c9c9c9]">
+      <input type="checkbox" name="newsletter" value="yes" class="mr-2 accent-[#ff3c78]">
+      Subscribe to newsletter
+    </label>
+    <div id="priceDisplay" class="text-[#ffcc00] text-lg font-semibold">Total: ₦0</div>
+    <button id="submitBtn" type="submit" class="w-full bg-[#ff3c78] text-white px-6 py-3 rounded-full font-bold hover:bg-[#e62a66]">Submit Booking Request</button>
+    <p class="text-xs text-[#c9c9c9]">* You'll receive a PDF ticket by email upon confirmation.</p>
+  </form>
+  <div id="toast" class="fixed bottom-6 right-6 bg-[#1b1b2f] text-white px-4 py-2 rounded shadow-lg hidden"></div>
+</div>
+  
+	<br/>
+	<br/>
+  
+  <!-- Dummy Payment Section -->
+  <div data-aos="fade-up">
+  <h2 class="text-2xl font-bold text-[#ff3c78] mb-6">Payment Preview (Not Active)</h2>
+  
+  <div class="max-w-md mx-auto bg-[#1b1b2f] p-6 rounded-lg space-y-4 shadow-lg text-left text-sm text-[#ddd]">
+    <div><strong>Ticket Type:</strong> <span id="summaryType">—</span></div>
+    <div><strong>Quantity:</strong> <span id="summaryQty">—</span></div>
+    <div><strong>Total:</strong> <span id="summaryTotal">₦0</span></div>
+    
+    <button id="simulatePay" class="w-full bg-[#00ffe7] text-black px-6 py-3 rounded-full font-bold hover:bg-[#ffcc00] transition-all">
+      Simulate Payment
+    </button>
+
+    <p class="text-xs text-[#c9c9c9] text-center mt-2">
+      * This is a demo. Real payment integration coming soon.
+    </p>
+  </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-[#1b1b2f] text-center py-6">
+    <p class="text-[#c9c9c9]">&copy; 2025 CityPulse Live. All rights reserved.</p>
+  </footer>
+
+
+<script>
+
+  // 🎯 Countdown Timer
+  const countdown = document.getElementById("countdown");
+  const eventDate = new Date("September 26, 2025 19:00:00").getTime();
+  const interval = setInterval(() => {
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+    if (diff <= 0) {
+      countdown.innerHTML = "🎉 Showtime!";
+      clearInterval(interval);
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }, 1000);
+
+  // 🎟️ Booking Form Logic
+  const form = document.getElementById("booking-form");
+  const toast = document.getElementById("toast");
+  const ticketPrices = {
+    "General Admission": 5000,
+    "VIP": 15000,
+    "Backstage Pass": 25000
+  };
+
+  let paymentConfirmed = false;
+
+  function showToast(message, success = true) {
+    toast.innerText = message;
+    toast.style.backgroundColor = success ? '#16a34a' : '#dc2626';
+    toast.classList.remove("hidden");
+    setTimeout(() => toast.classList.add("hidden"), 4000);
+  }
+
+  function updateTotal() {
+    const type = form.ticketType.value;
+    const qty = parseInt(form.quantity.value);
+    if (type && qty) {
+      const total = ticketPrices[type] * qty;
+      document.getElementById("priceDisplay").innerText = `Total: ₦${total.toLocaleString()}`;
+    }
+  }
+
+  function updatePaymentPreview() {
+    const type = form.ticketType.value;
+    const qty = parseInt(form.quantity.value);
+    const total = ticketPrices[type] * qty;
+    document.getElementById("summaryType").innerText = type || "—";
+    document.getElementById("summaryQty").innerText = qty || "—";
+    document.getElementById("summaryTotal").innerText = total ? `₦${total.toLocaleString()}` : "₦0";
+  }
+
+  // Event listeners for updating previews
+  form.ticketType.addEventListener("change", () => {
+    updateTotal();
+    updatePaymentPreview();
+  });
+
+  form.quantity.addEventListener("change", () => {
+    updateTotal();
+    updatePaymentPreview();
+  });
+
+  // Simulate payment button
+  document.getElementById("simulatePay").addEventListener("click", function () {
+    const type = form.ticketType.value;
+    const qty = form.quantity.value;
+    if (!type || !qty) {
+      showToast("❌ Select ticket type and quantity first.", false);
+    } else {
+      paymentConfirmed = true;
+      showToast("✅ Payment simulated! You may now submit your booking.");
+    }
+  });
+
+  // Form submit
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const email = formData.get("email");
+    const phone = formData.get("phone");
+    const submitBtn = document.getElementById("submitBtn");
+
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    const phoneValid = /^\+?[0-9]{7,15}$/.test(phone);
+
+    if (!emailValid || !phoneValid) {
+      showToast("❌ Please enter a valid email and phone number.", false);
+      return;
+    }
+
+    if (!paymentConfirmed) {
+      showToast("⚠️ Please simulate payment before submitting.", false);
+      return;
+    }
+
+    // Submit logic
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Submitting...";
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+    })
+    .then(response => {
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Submit Booking Request";
+      if (response.ok) {
+        form.reset();
+        document.getElementById("priceDisplay").innerText = "Total: ₦0";
+        updatePaymentPreview();
+        paymentConfirmed = false;
+        showToast("✅ Booking received! Check your email for the ticket.");
+      } else {
+        showToast("⚠️ Submission failed. Please try again.", false);
+      }
+    })
+    .catch(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Submit Booking Request";
+      showToast("⚠️ Network error. Please try again later.", false);
+    });
+  });
+
+</script>
+
+    
+  <!-- Optional Countdown Redirect (Commented) -->
+  <!--
+  <script>
+    if (diff <= 0) {
+      window.location.href = "https://your-livestream-or-thank-you-page.com";
+    }
+  </script>
+  -->
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
+</body>
+</html>
