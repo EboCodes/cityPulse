@@ -138,59 +138,48 @@
 
   <!-- Booking Form -->
   <section class="py-20 px-6 bg-[#1b1b2f] text-center" data-aos="fade-up">
-<div data-aos="fade-up">
-  <h2 class="text-3xl font-bold text-[#00ffe7] mb-6">Reserve Your Ticket</h2>
-  <form id="booking-form" action="https://script.google.com/macros/s/AKfycbzYsgHVw-1fMk8hut5XjIv4asnXSHrjruCfavEAFTspdHOz-OIAJ1NXiJ6Du4UJGorj_g/exec" method="POST" class="max-w-md mx-auto space-y-4">
-    <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded bg-white text-black">
-    <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded bg-white text-black">
-    <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-4 py-3 rounded bg-white text-black">
-    <select name="ticketType" required class="w-full px-4 py-3 rounded bg-white text-black">
-      <option value="" disabled selected>Select Ticket Type</option>
-      <option value="General Admission">General Admission – ₦5,000</option>
-      <option value="VIP">VIP – ₦15,000</option>
-      <option value="Backstage Pass">Backstage Pass – ₦25,000</option>
-    </select>
-    <select name="quantity" required class="w-full px-4 py-3 rounded bg-white text-black">
-      <option value="" disabled selected>Number of Tickets</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-    <label class="inline-flex items-center text-[#c9c9c9]">
-      <input type="checkbox" name="newsletter" value="yes" class="mr-2 accent-[#ff3c78]">
-      Subscribe to newsletter
-    </label>
-    <div id="priceDisplay" class="text-[#ffcc00] text-lg font-semibold">Total: ₦0</div>
-    <button id="submitBtn" type="submit" class="w-full bg-[#ff3c78] text-white px-6 py-3 rounded-full font-bold hover:bg-[#e62a66]">Submit Booking Request</button>
-    <p class="text-xs text-[#c9c9c9]">* You'll receive a PDF ticket by email upon confirmation.</p>
-  </form>
-  <div id="toast" class="fixed bottom-6 right-6 bg-[#1b1b2f] text-white px-4 py-2 rounded shadow-lg hidden"></div>
-</div>
-  
-	<br/>
-	<br/>
-  
-  <!-- Dummy Payment Section -->
-  <div data-aos="fade-up">
-  <h2 class="text-2xl font-bold text-[#ff3c78] mb-6">Payment Preview (Not Active)</h2>
-  
-  <div class="max-w-md mx-auto bg-[#1b1b2f] p-6 rounded-lg space-y-4 shadow-lg text-left text-sm text-[#ddd]">
-    <div><strong>Ticket Type:</strong> <span id="summaryType">—</span></div>
-    <div><strong>Quantity:</strong> <span id="summaryQty">—</span></div>
-    <div><strong>Total:</strong> <span id="summaryTotal">₦0</span></div>
-    
-    <button id="simulatePay" class="w-full bg-[#00ffe7] text-black px-6 py-3 rounded-full font-bold hover:bg-[#ffcc00] transition-all">
-      Simulate Payment
-    </button>
+    <div data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-[#00ffe7] mb-6">Reserve Your Ticket</h2>
+      <form id="booking-form" action="https://script.google.com/macros/s/AKfycbzYsgHVw-1fMk8hut5XjIv4asnXSHrjruCfavEAFTspdHOz-OIAJ1NXiJ6Du4UJGorj_g/exec" method="POST" class="max-w-md mx-auto space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 rounded bg-white text-black">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded bg-white text-black">
+        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-4 py-3 rounded bg-white text-black">
+        <select name="ticketType" required class="w-full px-4 py-3 rounded bg-white text-black">
+          <option value="" disabled selected>Select Ticket Type</option>
+          <option value="General Admission">General Admission – ₦5,000</option>
+          <option value="VIP">VIP – ₦15,000</option>
+          <option value="Backstage Pass">Backstage Pass – ₦25,000</option>
+        </select>
+        <select name="quantity" required class="w-full px-4 py-3 rounded bg-white text-black">
+          <option value="" disabled selected>Number of Tickets</option>
+          <option value="1">1</option><option value="2">2</option>
+          <option value="3">3</option><option value="4">4</option><option value="5">5</option>
+        </select>
+        <label class="inline-flex items-center text-[#c9c9c9]">
+          <input type="checkbox" name="newsletter" value="yes" class="mr-2 accent-[#ff3c78]"> Subscribe to newsletter
+        </label>
+        <div id="priceDisplay" class="text-[#ffcc00] text-lg font-semibold">Total: ₦0</div>
+        <button id="submitBtn" type="submit" class="w-full bg-[#ff3c78] text-white px-6 py-3 rounded-full font-bold hover:bg-[#e62a66]">Submit Booking Request</button>
+        <p class="text-xs text-[#c9c9c9]">* You'll receive a PDF ticket by email upon confirmation.</p>
+      </form>
+      <div id="toast" class="fixed bottom-6 right-6 bg-[#1b1b2f] text-white px-4 py-2 rounded shadow-lg hidden"></div>
+    </div>
+  </section>
 
-    <p class="text-xs text-[#c9c9c9] text-center mt-2">
-      * This is a demo. Real payment integration coming soon.
-    </p>
+  <!-- Payment Modal -->
+  <div id="paymentModal" class="fixed inset-0 bg-black/70 flex items-center justify-center hidden z-50">
+    <div class="bg-[#1b1b2f] p-6 rounded-lg max-w-md w-full space-y-4 shadow-2xl relative text-sm text-[#ddd]">
+      <button id="closePayment" class="absolute top-2 right-2 text-gray-400 hover:text-white text-xl">&times;</button>
+      <h2 class="text-2xl font-bold text-[#ff3c78] mb-4">Payment Preview (Not Active)</h2>
+      <div><strong>Ticket Type:</strong> <span id="summaryType">—</span></div>
+      <div><strong>Quantity:</strong> <span id="summaryQty">—</span></div>
+      <div><strong>Total:</strong> <span id="summaryTotal">₦0</span></div>
+      <button id="simulatePay" class="w-full bg-[#00ffe7] text-black px-6 py-3 rounded-full font-bold hover:bg-[#ffcc00] transition-all">
+        Simulate Payment
+      </button>
+      <p class="text-xs text-[#c9c9c9] text-center mt-2">* This is a demo. Real payment integration coming soon.</p>
+    </div>
   </div>
-  </div>
-</section>
 
   <!-- Footer -->
   <footer class="bg-[#1b1b2f] text-center py-6">
@@ -199,135 +188,73 @@
 
 
 <script>
-
-  // 🎯 Countdown Timer
   const countdown = document.getElementById("countdown");
   const eventDate = new Date("September 26, 2026 19:00:00").getTime();
   const interval = setInterval(() => {
     const now = new Date().getTime();
     const diff = eventDate - now;
-    if (diff <= 0) {
-      countdown.innerHTML = "🎉 Showtime!";
-      clearInterval(interval);
-      return;
-    }
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    if (diff <= 0) { countdown.innerHTML = "🎉 Showtime!"; clearInterval(interval); return; }
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff % (1000*60*60*24))/(1000*60*60));
+    const minutes = Math.floor((diff % (1000*60*60))/(1000*60));
+    const seconds = Math.floor((diff % (1000*60))/1000);
     countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
   }, 1000);
 
-  // 🎟️ Booking Form Logic
   const form = document.getElementById("booking-form");
   const toast = document.getElementById("toast");
-  const ticketPrices = {
-    "General Admission": 5000,
-    "VIP": 15000,
-    "Backstage Pass": 25000
-  };
-
+  const ticketPrices = { "General Admission":5000, "VIP":15000, "Backstage Pass":25000 };
   let paymentConfirmed = false;
 
-  function showToast(message, success = true) {
-    toast.innerText = message;
+  function showToast(msg, success=true){
+    toast.innerText = msg;
     toast.style.backgroundColor = success ? '#16a34a' : '#dc2626';
     toast.classList.remove("hidden");
-    setTimeout(() => toast.classList.add("hidden"), 4000);
+    setTimeout(()=>toast.classList.add("hidden"), 4000);
   }
-
-  function updateTotal() {
-    const type = form.ticketType.value;
-    const qty = parseInt(form.quantity.value);
-    if (type && qty) {
-      const total = ticketPrices[type] * qty;
-      document.getElementById("priceDisplay").innerText = `Total: ₦${total.toLocaleString()}`;
-    }
+  function updateTotal(){
+    const type=form.ticketType.value; const qty=parseInt(form.quantity.value);
+    if(type&&qty){ const total=ticketPrices[type]*qty; document.getElementById("priceDisplay").innerText=`Total: ₦${total.toLocaleString()}`; }
   }
-
-  function updatePaymentPreview() {
-    const type = form.ticketType.value;
-    const qty = parseInt(form.quantity.value);
-    const total = ticketPrices[type] * qty;
-    document.getElementById("summaryType").innerText = type || "—";
-    document.getElementById("summaryQty").innerText = qty || "—";
-    document.getElementById("summaryTotal").innerText = total ? `₦${total.toLocaleString()}` : "₦0";
+  function updatePaymentPreview(){
+    const type=form.ticketType.value; const qty=parseInt(form.quantity.value)||0;
+    const total= type&&qty ? ticketPrices[type]*qty : 0;
+    document.getElementById("summaryType").innerText= type||"—";
+    document.getElementById("summaryQty").innerText= qty||"—";
+    document.getElementById("summaryTotal").innerText= total?`₦${total.toLocaleString()}`:"₦0";
   }
+  form.ticketType.addEventListener("change",()=>{updateTotal();updatePaymentPreview();});
+  form.quantity.addEventListener("change",()=>{updateTotal();updatePaymentPreview();});
 
-  // Event listeners for updating previews
-  form.ticketType.addEventListener("change", () => {
-    updateTotal();
-    updatePaymentPreview();
-  });
-
-  form.quantity.addEventListener("change", () => {
-    updateTotal();
-    updatePaymentPreview();
-  });
-
-  // Simulate payment button
-  document.getElementById("simulatePay").addEventListener("click", function () {
-    const type = form.ticketType.value;
-    const qty = form.quantity.value;
-    if (!type || !qty) {
-      showToast("❌ Select ticket type and quantity first.", false);
-    } else {
-      paymentConfirmed = true;
-      showToast("✅ Payment simulated! You may now submit your booking.");
-    }
-  });
-
-  // Form submit
-  form.addEventListener("submit", function (e) {
+  // First click: show modal
+  form.addEventListener("submit", e=>{
     e.preventDefault();
-    const formData = new FormData(form);
-    const email = formData.get("email");
-    const phone = formData.get("phone");
-    const submitBtn = document.getElementById("submitBtn");
+    const email=form.email.value; const phone=form.phone.value;
+    const emailValid=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    const phoneValid=/^\+?[0-9]{7,15}$/.test(phone);
+    if(!emailValid||!phoneValid){showToast("❌ Please enter a valid email and phone number.",false);return;}
+    if(!paymentConfirmed){ updatePaymentPreview(); document.getElementById("paymentModal").classList.remove("hidden"); return; }
 
-    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    const phoneValid = /^\+?[0-9]{7,15}$/.test(phone);
-
-    if (!emailValid || !phoneValid) {
-      showToast("❌ Please enter a valid email and phone number.", false);
-      return;
-    }
-
-    if (!paymentConfirmed) {
-      showToast("⚠️ Please simulate payment before submitting.", false);
-      return;
-    }
-
-    // Submit logic
-    submitBtn.disabled = true;
-    submitBtn.innerText = "Submitting...";
-
-    fetch(form.action, {
-      method: "POST",
-      body: formData,
-    })
-    .then(response => {
-      submitBtn.disabled = false;
-      submitBtn.innerText = "Submit Booking Request";
-      if (response.ok) {
-        form.reset();
-        document.getElementById("priceDisplay").innerText = "Total: ₦0";
-        updatePaymentPreview();
-        paymentConfirmed = false;
-        showToast("✅ Booking received! Check your email for the ticket.");
-      } else {
-        showToast("⚠️ Submission failed. Please try again.", false);
-      }
-    })
-    .catch(() => {
-      submitBtn.disabled = false;
-      submitBtn.innerText = "Submit Booking Request";
-      showToast("⚠️ Network error. Please try again later.", false);
-    });
+    // If payment confirmed, send form
+    const submitBtn=document.getElementById("submitBtn");
+    const formData=new FormData(form);
+    submitBtn.disabled=true; submitBtn.innerText="Submitting...";
+    fetch(form.action,{method:"POST",body:formData})
+    .then(r=>{submitBtn.disabled=false; submitBtn.innerText="Submit Booking Request";
+      if(r.ok){ form.reset(); document.getElementById("priceDisplay").innerText="Total: ₦0"; updatePaymentPreview(); paymentConfirmed=false;
+        showToast("✅ Booking received! Check your email for the ticket."); }
+      else{ showToast("⚠️ Submission failed. Please try again.",false); }
+    }).catch(()=>{submitBtn.disabled=false; submitBtn.innerText="Submit Booking Request"; showToast("⚠️ Network error. Please try again later.",false);});
   });
 
+  // Modal handlers
+  document.getElementById("closePayment").addEventListener("click",()=>{document.getElementById("paymentModal").classList.add("hidden");});
+  document.getElementById("simulatePay").addEventListener("click",()=>{
+    const type=form.ticketType.value; const qty=form.quantity.value;
+    if(!type||!qty){showToast("❌ Select ticket type and quantity first.",false);}
+    else{paymentConfirmed=true; document.getElementById("paymentModal").classList.add("hidden"); showToast("✅ Payment simulated! You may now submit your booking.");}
+  });
 </script>
-
     
   <!-- Optional Countdown Redirect (Commented) -->
   <!--
